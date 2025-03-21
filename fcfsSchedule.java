@@ -3,9 +3,9 @@ private static void fcfsSchedule(List<Process> processes) {
 
   int currentTime = 0;
   for (Process p : processes) {
-    if (currentTime < p.arrivalTime) {
-      currentTime = p.arrivalTime;
-    }
+      if (currentTime < p.arrivalTime) {
+        currentTime = p.arrivalTime;
+      }
     p.startTime = currentTime;
     p.finishTime = p.startTime + p.burstTime;
     p.waitingTime = p.startTime - p.arrivalTime;
