@@ -6,7 +6,7 @@ public static void main(String[] args) {
             return;
         }
         fcfsSchedule(fcfsProcesses);
-        System.out.println("\n FCFS");
+        System.out.println("\nFCFS");
         printGanttChart(fcfsProcesses);
         printTimes(fcfsProcesses);
 
@@ -17,7 +17,7 @@ public static void main(String[] args) {
             return;
         }
         sjfSchedule(sjfProcesses);
-        System.out.println("\n SJF");
+        System.out.println("\nSJF");
         printGanttChart(sjfProcesses);
         printTimes(sjfProcesses);
     }
