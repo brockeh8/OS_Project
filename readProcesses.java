@@ -10,4 +10,18 @@ private static List<Process> readProcesses(String fileNAme) {
             continue;
         }
         String[] parts = line.trim().split("\\s+");
-        if 
+        if (parts.length < 4) {
+            continue;
+        }
+
+        int pid 
+        int arrival 
+        int burst
+        int priority
+
+        list.add(new Process(pid, arrival, burst, priority));
+      }
+  ]
+  catch ()
+        
+          
