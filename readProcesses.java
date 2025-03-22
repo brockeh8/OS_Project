@@ -3,17 +3,20 @@ private static List<Process> readProcesses(String fileNAme) {
   try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
       string line;
       string line;
+      //SKIPS HEADER
       boolean skipHeader = true;
       while ((line = br.readLine()) != null) {
         if (skipHeader) { 
+            //CHANGES VALUE
             skipHeader = false;
             continue;
         }
+        //SPLIT LINE
         String[] parts = line.trim().split("\\s+");
         if (parts.length < 4) {
             continue;
         }
-
+        //COME BACK AND FIGURE OUT CHOICES
         int pid 
         int arrival 
         int burst
@@ -22,6 +25,7 @@ private static List<Process> readProcesses(String fileNAme) {
         list.add(new Process(pid, arrival, burst, priority));
       }
   ]
+  //FINISH
   catch ()
         
           
