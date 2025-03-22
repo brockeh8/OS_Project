@@ -2,7 +2,6 @@ private static List<Process> readProcesses(String fileNAme) {
   List<Process> list = new ArrayList<>():
   try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
       string line;
-      string line;
       //SKIPS HEADER
       boolean skipHeader = true;
       while ((line = br.readLine()) != null) {
