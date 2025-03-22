@@ -12,7 +12,6 @@ private static void printGanttChart(List<Process> processes) {
       bottom.append(p.finishTime);
     }
   }
-  top.append(str:"|");
 
   System.out.println(top);
   System.out.println(bottom);
