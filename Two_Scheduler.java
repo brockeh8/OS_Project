@@ -2,7 +2,7 @@ import java.io. *;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 2Scheduler.java {
+public class Two_Scheduler.java {
     static class Process {
         int pid;
         int arrivalTime;
