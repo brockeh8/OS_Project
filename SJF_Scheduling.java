@@ -35,4 +35,17 @@ private static void sjfSchedule(List<Process> processes) {
           }
           currentTime = processes.get(earliestIdx).arrivalTime;
           idx = earliestIdx;
-      }
+      }  
+      visited[idx] = true;
+      Process p = processes.get(idx);
+
+      p.startTime = currentTime;
+      p.finishTime = p.startTime + p.burstTime;
+      p.waitingTime = p.startTime - p.arrivalTime;
+      p.turnaroundTime = p.finishTime - p.arrivalTime;
+
+
+      currentTime = p.finishTime;
+      finished++;
+    }
+}
