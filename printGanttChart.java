@@ -6,8 +6,8 @@ private static void printGanttChart(List<Process> processes) {
 
   for (int i = 0; i < processes.size(); i++) {
     Process p = processes.get(i);
-    top.append(str:"| P").append(p.pid).append(str:" "); // prints "| P# "
-    bottom.append(" ").append(p.startTime).append(str:"  "); // prints spacing for times
+    top.append(" ").append("| P").append(p.pid).append(" "); // prints "| P# "
+    bottom.append(p.startTime).append("  | "); // prints spacing for times
     if (i == processes.size() - 1) {
       bottom.append(p.finishTime);
     }
